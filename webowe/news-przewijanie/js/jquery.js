@@ -15,7 +15,7 @@ $(document).ready(function(){
                 }
 
                 function slideArticle(){
-                    $('#news-feed li:last').clone().prependTo('#nwes-feed').css('display','none');
+                    $('#news-feed li:last').clone().prependTo('#news-feed').css('display','none');
                     $('#news-feed li:first').fadeIn(1000, function(){
                         $(this).css('background-color',"#45c4f6").delay(1000).slideDown('fast', function() {
                             $(this).css('background-color',"#45c4f6");
