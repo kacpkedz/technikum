@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\RegExy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F22BE256-980B-4670-855C-EB2362D9889A}|RegExy\\RegExy.csproj|c:\\users\\t4\\documents\\technikum\\desktopowe\\regexy\\regexy\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F22BE256-980B-4670-855C-EB2362D9889A}|RegExy\\RegExy.csproj|solutionrelative:regexy\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F22BE256-980B-4670-855C-EB2362D9889A}|RegExy\\RegExy.csproj|c:\\users\\t4\\documents\\technikum\\desktopowe\\regexy\\regexy\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F22BE256-980B-4670-855C-EB2362D9889A}|RegExy\\RegExy.csproj|solutionrelative:regexy\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\RegExy\\RegExy\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RegExy\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\RegExy\\RegExy\\MainWindow.xaml.cs",
+              "RelativeToolTip": "RegExy\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwC8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T09:39:20.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\RegExy\\RegExy\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "RegExy\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\RegExy\\RegExy\\MainWindow.xaml",
+              "RelativeToolTip": "RegExy\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-02T09:39:24.359Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
