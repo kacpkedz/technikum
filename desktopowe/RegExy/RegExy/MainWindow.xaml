@@ -7,12 +7,27 @@
         mc:Ignorable="d"
         Title="RegEx" Height="450" Width="450">
     <Grid>
-        <Label Content="Kod pocztowy" HorizontalAlignment="Left" Margin="114,110,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtBoxKodpocztowy" HorizontalAlignment="Left" Margin="114,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnKodpocztowy" Content="Sprawdź kod" HorizontalAlignment="Left" Margin="260,140,0,0" VerticalAlignment="Top" Click="btnKodpocztowy_Click_1"/>
-        <TextBox x:Name="txtBoxEmail" HorizontalAlignment="Left" Margin="114,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
-        <Label Content="E-mail" HorizontalAlignment="Left" Margin="114,177,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnEmail" Content="Sprawdź email" HorizontalAlignment="Left" Height="18" Margin="260,0,0,0" VerticalAlignment="Center" Width="89" Click="btnEmail_Click"/>
+        <Label Content="Kod pocztowy" HorizontalAlignment="Left" Margin="79,19,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxKodpocztowy" HorizontalAlignment="Left" Margin="79,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnKodpocztowy" Content="Sprawdź kod" HorizontalAlignment="Left" Margin="225,49,0,0" VerticalAlignment="Top" Click="btnKodpocztowy_Click_1" Width="89"/>
+        <TextBox x:Name="txtBoxEmail" HorizontalAlignment="Left" Margin="79,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="79,73,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnEmail" Content="Sprawdź email" HorizontalAlignment="Left" Height="18" Margin="225,104,0,0" VerticalAlignment="Top" Width="89" Click="btnEmail_Click"/>
+        <Label Content="Numer telefonu" HorizontalAlignment="Left" Margin="79,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxNumer" HorizontalAlignment="Left" Margin="79,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnNumer" Content="Sprawdź numer" HorizontalAlignment="Left" Height="18" Margin="225,158,0,0" VerticalAlignment="Top" Width="89" Click="btnNumer_Click"/>
+        <Label Content="Daty" HorizontalAlignment="Left" Margin="79,181,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxData" HorizontalAlignment="Left" Margin="79,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnData" Content="Formatuj date" HorizontalAlignment="Left" Margin="225,212,0,0" VerticalAlignment="Top" Width="89" Click="btnData_Click"/>
+        <Label Content="Wpisz tekst" HorizontalAlignment="Left" Margin="79,240,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxTekst" HorizontalAlignment="Left" Margin="79,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnUsuwanie" Content="Usuń spacje" HorizontalAlignment="Left" Margin="225,269,0,0" VerticalAlignment="Top" Width="89" Click="btnUsuwanie_Click"/>
+        <Label Content="Wpisz tekst" HorizontalAlignment="Left" Margin="79,296,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxTekst2" HorizontalAlignment="Left" Margin="79,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnPodmien" Content="Podmień wyrazy" HorizontalAlignment="Left" Margin="225,325,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.631,0.944" Width="89" Click="btnPodmien_Click"/>
+        <Label Content="Wpisz zdanie" HorizontalAlignment="Left" Margin="79,350,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxTekst3" HorizontalAlignment="Left" Margin="79,381,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnWymien" Content="Wymień wyrazy" HorizontalAlignment="Left" Margin="225,379,0,0" VerticalAlignment="Top" Width="89" Click="btnWymien_Click"/>
 
     </Grid>
 </Window>

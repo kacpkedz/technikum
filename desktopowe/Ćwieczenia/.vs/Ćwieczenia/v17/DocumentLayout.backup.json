@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\\u0106wieczenia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58F98413-7A7D-420F-97D0-CE1E14286AC8}|\u0106wieczenia\\\u0106wieczenia.csproj|c:\\users\\t4\\documents\\technikum\\desktopowe\\\u0107wieczenia\\\u0107wieczenia\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58F98413-7A7D-420F-97D0-CE1E14286AC8}|\u0106wieczenia\\\u0106wieczenia.csproj|solutionrelative:\u0107wieczenia\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58F98413-7A7D-420F-97D0-CE1E14286AC8}|\u0106wieczenia\\\u0106wieczenia.csproj|c:\\users\\t4\\documents\\technikum\\desktopowe\\\u0107wieczenia\\\u0107wieczenia\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{58F98413-7A7D-420F-97D0-CE1E14286AC8}|\u0106wieczenia\\\u0106wieczenia.csproj|solutionrelative:\u0107wieczenia\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\\u0106wieczenia\\\u0106wieczenia\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "\u0106wieczenia\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\\u0106wieczenia\\\u0106wieczenia\\MainWindow.xaml",
+              "RelativeToolTip": "\u0106wieczenia\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-03T07:55:44.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\\u0106wieczenia\\\u0106wieczenia\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "\u0106wieczenia\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\t4\\Documents\\technikum\\desktopowe\\\u0106wieczenia\\\u0106wieczenia\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "\u0106wieczenia\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:55:41.454Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

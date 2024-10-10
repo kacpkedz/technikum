@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using System.Runtime.CompilerServices;
 
 namespace RegExy
 {
@@ -55,6 +56,68 @@ namespace RegExy
             else
             {
                 MessageBox.Show("Email jest nie poprawny", "Błąd maila", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void btnNumer_Click(object sender, RoutedEventArgs e)
+        {
+            string ptrnNumer = @"\d{3}-\d{3}-\d{3}";
+            string numeryTel = txtBoxNumer.Text;
+
+            Regex regexTel = new Regex(ptrnNumer);
+            MatchCollection matches = regexTel.Matches(numeryTel);
+
+            foreach (Match m in matches)
+            {
+                MessageBox.Show($"{m}", "Numer telefonu", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void btnData_Click(object sender, RoutedEventArgs e)
+        {
+            string ptrnDate = @"(\d{4})-(\d{2})-(\d{2})";
+            string replaceDate = "$3-$2-$1";
+            string txtData = txtBoxData.Text;
+            
+            Regex regexData = new Regex(ptrnDate);
+            string newData = regexData.Replace(txtData, replaceDate);
+
+            MessageBox.Show($"Nowa data: {newData}", "Format daty", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btnUsuwanie_Click(object sender, RoutedEventArgs e)
+        {
+            string ptrnZdanie = @"\s+";
+            string txtZdanie = txtBoxTekst.Text;
+
+            Regex regexZdanie = new Regex(ptrnZdanie);
+            string newZdanie = regexZdanie.Replace(txtZdanie, " ");
+
+            MessageBox.Show($"{newZdanie}", "Usuwanie zbędnych spacji", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btnPodmien_Click(object sender, RoutedEventArgs e)
+        {
+            string ptrnZdanie2 = @"tulipan|róża|goździk|hortensja";
+            string txtZdanie2 = txtBoxTekst2.Text;
+
+            Regex regexZdanie2 = new Regex(ptrnZdanie2);
+            string newZdanie2 = regexZdanie2.Replace(txtZdanie2, "kwiatek");
+
+            MessageBox.Show($"Nowe zdanie: {newZdanie2}", "Zmiana wyrazów", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btnWymien_Click(object sender, RoutedEventArgs e)
+        {
+            string ptrnZdanie3 = @",";
+            string txtZdanie3 = txtBoxTekst3.Text;
+
+            Regex regexZdanie3 = new Regex(ptrnZdanie3);
+            string[] jezyki = regexZdanie3.Split(txtZdanie3);
+
+            foreach (string jezyk in jezyki)
+            {
+                MessageBox.Show($"{jezyki}", "Języki", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
     }

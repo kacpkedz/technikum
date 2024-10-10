@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RegExy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24c0045f2240481aa2b118862c1836b46c4eca54")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16a0ac456fda15b3ae011ad311de66c61fbd21c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("RegExy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RegExy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
