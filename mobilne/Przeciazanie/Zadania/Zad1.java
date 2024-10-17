@@ -46,8 +46,10 @@ public class Zad1 {
         for (int i = 0; i < n; i++) {
             sumaPrzekatnej += tablica[i][i];  // Elementy na przekątnej mają indeksy [i][i]
         }
-
+        
         // Wyświetlenie wyniku
         System.out.println("Suma elementów na przekątnej: " + sumaPrzekatnej);
+
+        scanner.close();
     }
 }
