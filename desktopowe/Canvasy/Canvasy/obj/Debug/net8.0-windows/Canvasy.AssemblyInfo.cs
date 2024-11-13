@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Canvasy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b78242edb83fca772edbdb15c2a8613cfbef0ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c738af1bfe114ad5e6e14da6e56d3b79d8a8dd8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Canvasy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Canvasy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
