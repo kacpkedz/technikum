@@ -1,6 +1,10 @@
 <div class="container">
-    <h3>Osoba:</h3>
+    <div class="card" style="padding: 10px; margin-top: 50px;">
+        <div class="card-header" style="margin: -10px; margin-bottom: 10px;">
+            Osoba
+        </div>
     <form (ngSubmit) = 'sprawdzanie()'>
+        
         <div class="mb-3">
             <label for="imie">Imię:</label>
             <input type="text" id="imie" class="form-control" [(ngModel)]="imie" name="imie">
@@ -11,11 +15,10 @@
         </div>
         <div class="mb-3">
             <label for="wiek">Wiek:</label>
-            <input type="number" id="imie" class="form-control" [(ngModel)]="wiek" name="wiek">
+            <input type="number" id="wiek" min="0" class="form-control" [(ngModel)]="wiek" name="wiek">
         </div>
     <button type="submit" class="btn btn-primary"> Sprawdź </button>
     </form>
-    <br>
-    <p *ngIf="wynik !== null">{{ wynik }}</p>
-    
+</div>
+    <p *ngIf="wynik !== null" style="text-align: center;"><br>{{ wynik }}</p>
 </div>

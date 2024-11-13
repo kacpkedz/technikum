@@ -17,7 +17,8 @@ export class OsobyComponent {
   wynik: string | null = null;
 
   czyOsobaJestNaLiscie(imie: string, nazwisko: string, wiek: number): boolean { 
-    return this.osoby.some(osoba => osoba[0] === imie && osoba[1] === nazwisko && osoba[2] === wiek); 
+    return this.osoby.some(osoba => osoba[0] === imie && 
+      osoba[1] === nazwisko && osoba[2] === wiek);
   } 
   
   sprawdzanie() { 
