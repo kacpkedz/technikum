@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-header">Lista pracowników</div>
+    <div class="card-body">
+      <!-- Tabela wyświetlająca dane pracowników -->
+      <table class="table">
+        
+        <!-- Nagłówki kolumn tabeli -->
+        <thead>
+          <tr>
+            <!-- Nagłówki dla każdej z kolumn -->
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Email</th>
+            <th>Wiek</th>
+            <th>Stanowisko</th>
+          </tr>
+        </thead>
+        
+        <!-- Ciało tabeli, które będzie wypełniane danymi pracowników -->
+        <tbody>
+          <tr *ngFor="let pracownik of pracownicy">
+            <!-- Wyświetlanie danych pracownika w odpowiednich kolumnach -->
+            <td>{{ pracownik.imie }}</td>
+            <td>{{ pracownik.nazwisko }}</td>
+            <td>{{ pracownik.email }}</td>
+            <td>{{ pracownik.wiek }}</td>
+            <td>{{ pracownik.stanowisko }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>  

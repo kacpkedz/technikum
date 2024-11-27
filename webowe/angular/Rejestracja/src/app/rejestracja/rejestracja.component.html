@@ -1,0 +1,71 @@
+<div class="card">
+    <div class="card-header">Rejestracja pracownika</div>
+
+    <div class="card-body">
+        <!-- Formularz, który będzie wywoływał funkcję onSubmit po przesłaniu -->
+        <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        
+            <!-- Sekcja dla imienia użytkownika -->
+            <div class="mb-3">
+                <label for="imie" class="form-label">Imię</label>
+                <input type="text" id="imie" class="form-control" name="imie" [(ngModel)]="pracownik.imie" required />
+            </div>
+
+            <!-- Sekcja dla nazwiska użytkownika -->
+            <div class="mb-3">
+                <label for="nazwisko" class="form-label">Nazwisko</label>
+                <input type="text" id="nazwisko" class="form-control" name="nazwisko" [(ngModel)]="pracownik.nazwisko" required />
+            </div>
+
+            <!-- Sekcja dla adresu email użytkownika -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" name="email" [(ngModel)]="pracownik.email" required />
+            </div>
+
+            <!-- Sekcja dla hasła użytkownika -->
+            <div class="mb-3">
+                <label for="haslo" class="form-label">Hasło</label>
+                <input type="password" id="haslo" class="form-control" name="haslo" [(ngModel)]="pracownik.haslo" required />
+            </div>
+
+            <!-- Sekcja dla potwierdzenia hasła użytkownika -->
+            <div class="mb-3">
+                <label for="potwierdzHaslo" class="form-label">Potwierdź hasło</label>
+                <input type="password" id="potwierdzHaslo" class="form-control" name="potwierdzHaslo" [(ngModel)]="pracownik.potwierdzHaslo" required />
+            </div>
+
+            <!-- Sekcja dla wieku użytkownika -->
+            <div class="mb-3">
+                <label for="wiek" class="form-label">Wiek</label>
+                <input type="number" id="wiek" class="form-control" name="wiek" [(ngModel)]="pracownik.wiek" required />
+            </div>
+
+            <!-- Sekcja dla zgody na przetwarzanie danych osobowych -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" id="zgoda" class="form-check-input" name="zgoda" [(ngModel)]="pracownik.zgoda" required />
+                <label for="zgoda" class="form-check-label">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+            </div>
+
+            <!-- Sekcja dla wyboru stanowiska użytkownika -->
+            <div class="mb-3">
+                <label for="stanowisko" class="form-label">Stanowisko</label>
+                <select id="stanowisko" class="form-select" name="stanowisko" [(ngModel)]="pracownik.stanowisko" required>
+                    <option value="">Wybierz stanowisko</option>
+                    <option value="kierownik">Kierownik</option>
+                    <option value="kierowca">Kierowca</option>
+                    <option value="ksiegowa">Księgowa</option>
+                    <option value="pracownik fizyczny">Pracownik fizyczny</option>
+                </select>
+            </div>
+
+            <!-- Sekcja dla wyświetlenia komunikatu o błędzie, jeśli formularz nie jest poprawnie wypełniony -->
+            <div class="alert alert-danger" *ngIf="blad">
+                {{ blad }}
+            </div>
+
+            <!-- Przycisk wysyłający formularz -->
+            <button type="submit" class="btn btn-primary">Zarejestruj</button>
+        </form>
+    </div>
+</div>
