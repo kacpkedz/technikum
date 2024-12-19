@@ -1,0 +1,25 @@
+<div class="container">
+    <form class="pierwszy">
+      <div class="form-group">
+        <label for="title">Nazwa</label>
+        <input type="text"  class="form-control" [(ngModel)]="title" id="title" name="ksiazkaTitle" required>
+      </div>
+      <div class="form-group">
+        <label for="category">Rodzaj</label>
+        <select class="form-control" [(ngModel)]="category" id="category" name="ksiazkaCategory" required>
+          <option *ngFor="let cat of booksCategories" value="{{cat}}">{{cat}}</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="addBook()">Zapisz</button>
+      <ul id="book-list">
+        <li *ngFor="let book of books">{{book.title}} ({{book.category}})</li>
+      </ul>
+    </form>
+    <hr>
+    <form>
+      <label for="category">Kategoria</label>
+      <input type="text" class="form-control" [(ngModel)]="newCategory" id="newCategory" name="newCategory">
+      <button type="button" class="btn btn-primary" (click)="addCategory()">Dodaj</button>
+    </form>
+    <p>{{addResult}}</p>
+  </div>

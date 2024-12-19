@@ -1,0 +1,108 @@
+<div class="container mt-4">
+  <div class="row">
+    
+    <!-- Formularz do dodawania nowych rekordów -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h5>Dodaj rekord</h5>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="formularzRekordu" (ngSubmit)="dodajRekord()">
+            
+            <!-- Pole dla imienia -->
+            <div class="mb-3">
+              <label for="imie" class="form-label">Imię</label>
+              <input id="imie" class="form-control" formControlName="imie" />
+              <!-- Komunikat o błędzie, jeśli pole jest niewypełnione -->
+              <div *ngIf="formularzRekordu.controls['imie'].invalid && formularzRekordu.controls['imie'].touched" class="text-danger">
+                Imię jest wymagane.
+              </div>
+            </div>
+
+            <!-- Pole dla nazwiska -->
+            <div class="mb-3">
+              <label for="nazwisko" class="form-label">Nazwisko</label>
+              <input id="nazwisko" class="form-control" formControlName="nazwisko" />
+              <!-- Komunikat o błędzie, jeśli pole jest niewypełnione -->
+              <div *ngIf="formularzRekordu.controls['nazwisko'].invalid && formularzRekordu.controls['nazwisko'].touched" class="text-danger">
+                Nazwisko jest wymagane.
+              </div>
+            </div>
+
+            <!-- Pole dla PESEL -->
+            <div class="mb-3">
+              <label for="pesel" class="form-label">PESEL</label>
+              <input id="pesel" type="text" class="form-control" formControlName="pesel" />
+              <!-- Komunikat o błędzie, jeśli PESEL jest nieprawidłowy -->
+              <div *ngIf="formularzRekordu.controls['pesel'].invalid && formularzRekordu.controls['pesel'].touched" class="text-danger">
+                PESEL jest wymagany (11 cyfr).
+              </div>
+            </div>
+
+            <!-- Pole dla wyboru kategorii -->
+            <div class="mb-3">
+              <label for="kategoria" class="form-label">Kategoria</label>
+              <select id="kategoria" class="form-select" formControlName="kategoria">
+                <option value="">Wybierz kategorię</option>
+                <option *ngFor="let kat of kategorie" [value]="kat">{{ kat }}</option>
+              </select>
+              <!-- Komunikat o błędzie, jeśli kategoria nie jest wybrana -->
+              <div *ngIf="formularzRekordu.controls['kategoria'].invalid && formularzRekordu.controls['kategoria'].touched" class="text-danger">
+                Kategoria jest wymagana.
+              </div>
+            </div>
+
+            <!-- Pole dla tytułu -->
+            <div class="mb-3">
+              <label for="tytul" class="form-label">Tytuł</label>
+              <input id="tytul" class="form-control" formControlName="tytul" />
+              <!-- Komunikat o błędzie, jeśli tytuł jest pusty -->
+              <div *ngIf="formularzRekordu.controls['tytul'].invalid && formularzRekordu.controls['tytul'].touched" class="text-danger">
+                Tytuł jest wymagany.
+              </div>
+            </div>
+
+            <!-- Przycisk do wysłania formularza, zablokowany, gdy formularz jest nieprawidłowy -->
+            <button type="submit" class="btn btn-primary" [disabled]="formularzRekordu.invalid">Zapisz</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lista dodanych rekordów -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h5>Lista rekordów</h5>
+        </div>
+        <div class="card-body">
+          <!-- Tabela wyświetlająca dodane rekordy -->
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>PESEL</th>
+                <th>Kategoria</th>
+                <th>Tytuł</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Generowanie wierszy na podstawie tablicy 'rekordy' -->
+              <tr *ngFor="let rekord of rekordy; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ rekord.imie }}</td>
+                <td>{{ rekord.nazwisko }}</td>
+                <td>{{ rekord.pesel }}</td>
+                <td>{{ rekord.kategoria }}</td>
+                <td>{{ rekord.tytul }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

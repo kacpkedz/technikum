@@ -1,0 +1,26 @@
+<div class="container mt-4 kalkulatorek">
+  <h2 class="text-center">Prosty Kalkulatorek</h2>
+  <div class="form-group">
+    <label for="num1">Liczba a:</label>
+    <input type="number" id="num1" class="form-control" name="num1" [(ngModel)]="num1"/>
+  </div>
+  <div class="form-group">
+    <label for="num2">Liczba b:</label>
+    <input type="number" id="num2" class="form-control" name="num2" [(ngModel)]="num2"/>
+  </div>
+
+  <button class="btn btn-primary btn-block mt-3" (click)="calculate()">Licz</button>
+
+  <div *ngIf="errorMes" class="alert alert-danger mt-3">
+    {{ errorMes }}
+  </div>
+
+  <div *ngIf="wynik" class="alert alert-success mt-3">
+    <p>Suma liczb: {{ wynik.suma }}</p>
+    <p>Różnica liczb: {{ wynik.roznica }}</p>
+    <p>Iloczyn liczb: {{ wynik.iloczyn }}</p>
+    <p>Iloraz liczb: {{ wynik.iloraz }}</p>
+  </div>
+</div>
+<app-bmi></app-bmi>
+<app-kolo></app-kolo>

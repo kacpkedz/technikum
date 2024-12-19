@@ -1,0 +1,33 @@
+<div class="container mt-4 kalkulator-kuli">
+    <h2 class="text-center">Kalkulator Kuli</h2>
+    <form>
+      <div class="form-group">
+        <label for="promien">Promień kuli (r):</label>
+        <input id="promien" type="number" class="form-control" name="promien" required min="0.1" [(ngModel)]="promien"/>
+      </div>
+  
+      <div class="form-group">
+        <label for="pi">Wartość Pi:</label>
+        <input id="pi" type="number" class="form-control" name="pi" required min="0.1" [(ngModel)]="pi"/>
+      </div>
+  
+      <button type="button" class="btn btn-primary btn-block mt-3" (click)="obliczPoleKuli()">
+        Oblicz pole kuli
+      </button>
+      <button type="button" class="btn btn-secondary btn-block mt-3" (click)="obliczObjetoscKuli()">
+        Oblicz objętość kuli
+      </button>
+    </form>
+  
+    <div *ngIf="error" class="alert alert-danger mt-3">
+      {{ error }}
+    </div>
+  
+    <div *ngIf="pole !== null" class="alert alert-success mt-3">
+      Pole powierzchni kuli: {{ pole | number: '1.1-2' }} cm2
+    </div>
+  
+    <div *ngIf="objetosc !== null" class="alert alert-success mt-3">
+      Objętość kuli: {{ objetosc | number: '1.1-2' }} cm3
+    </div>
+  </div>
